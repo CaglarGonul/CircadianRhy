@@ -1,6 +1,7 @@
 package  {
 	import com.ideakup.ColorLabels;
 	import com.ideakup.FluctGrid;
+	import com.ideakup.FluctGridItem;
 	import com.ideakup.RummiPieceMC;
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
@@ -13,7 +14,7 @@ package  {
 		private var _board:Billiard = new Billiard();
 		private var _pieceLabels:Array = new Array();
 		private var _shuffledPieceLabels:Array = new Array();
-		private var _rummiPieces:Array = new Array();
+		private var _rummiPieces:Array = new Array(); //For storing rum piece movie clips.
 		private var _sampleGrid:FluctGrid;
 		
 		public function TestFluctGridClass() {
@@ -48,7 +49,7 @@ package  {
 		}
 		
 		private function createRummiPieces():void {
-			for (var i:int = 0; i < 15; i++) {
+			for (var i:int = 0; i < 52; i++) {
 				var rummiPiece:RummiPieceMC = new RummiPieceMC();
 				rummiPiece.labelOn = _shuffledPieceLabels[i];
 				var labelClass:Class = getDefinitionByName(_shuffledPieceLabels[i]) as Class;
@@ -63,10 +64,15 @@ package  {
 
 		private function showASampleGrid():void {
 			_sampleGrid = new FluctGrid(2, 14, CustomizeGrid.HEIGHT, CustomizeGrid.WIDTH, 2.6);
+			for (var i:int = 0; i < 19; i++) {
+				var oneFluctItmToBeAddedToGrid:FluctGridItem = new FluctGridItem(_rummiPieces[i] as RummiPieceMC, i);
+				_sampleGrid.addElement(oneFluctItmToBeAddedToGrid);
+			}
+			_sampleGrid.x = (700 / 2) - (_board.width / 2) + 12;
+			_sampleGrid.y = 123 ;
+			addChild(_sampleGrid);
 		}
 
-		
-		
 	}
 
 }
