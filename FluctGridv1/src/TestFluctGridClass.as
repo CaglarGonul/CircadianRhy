@@ -49,7 +49,7 @@ package  {
 		}
 		
 		private function createRummiPieces():void {
-			for (var i:int = 0; i < 52; i++) {
+			for (var i:int = 0; i < 17; i++) {
 				var rummiPiece:RummiPieceMC = new RummiPieceMC();
 				rummiPiece.labelOn = _shuffledPieceLabels[i];
 				var labelClass:Class = getDefinitionByName(_shuffledPieceLabels[i]) as Class;
@@ -64,8 +64,8 @@ package  {
 
 		private function showASampleGrid():void {
 			_sampleGrid = new FluctGrid(2, 14, CustomizeGrid.HEIGHT, CustomizeGrid.WIDTH, 2.6);
-			for (var i:int = 0; i < 19; i++) {
-				var oneFluctItmToBeAddedToGrid:FluctGridItem = new FluctGridItem(_rummiPieces[i] as RummiPieceMC, i);
+			for (var i:int = 0; i < 28; i++) {
+				var oneFluctItmToBeAddedToGrid:FluctGridItem = new FluctGridItem(_rummiPieces[i] as RummiPieceMC);
 				_sampleGrid.addElement(oneFluctItmToBeAddedToGrid);
 			}
 			_sampleGrid.x = (700 / 2) - (_board.width / 2) + 12;

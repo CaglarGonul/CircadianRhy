@@ -8,11 +8,10 @@ package com.ideakup {
 		public var col:int;
 		public var itemonme:MovieClip;
 		
-		public function FluctGridItem(piece:MovieClip, i:int) {
+		public function FluctGridItem(piece:MovieClip) {
 			if (piece != null) {
 				itemonme = piece;
 				addChild(itemonme);
-				trace(i);
 			}
 		}
 	
