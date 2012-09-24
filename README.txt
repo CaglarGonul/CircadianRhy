@@ -1,1 +1,1 @@
-This is an animation idea for casual games.
+This is an animation idea for casual games. All the information about this project can be found here : http://www.caglargonul.com/2012/09/02/a-fluct-grid-for-rummikub/
