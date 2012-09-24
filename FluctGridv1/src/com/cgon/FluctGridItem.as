@@ -1,4 +1,4 @@
-package com.ideakup {
+package com.cgon {
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	
@@ -14,7 +14,5 @@ package com.ideakup {
 				addChild(itemonme);
 			}
 		}
-	
 	}
-
 }

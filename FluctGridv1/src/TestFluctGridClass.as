@@ -1,12 +1,12 @@
 package  {
-	import com.ideakup.ColorLabels;
-	import com.ideakup.FluctGrid;
-	import com.ideakup.FluctGridItem;
-	import com.ideakup.RummiPieceMC;
+	import com.cgon.ColorLabels;
+	import com.cgon.CustomizeGrid;
+	import com.cgon.FluctGrid;
+	import com.cgon.FluctGridItem;
+	import com.cgon.RummiPieceMC;
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.utils.getDefinitionByName;
-	import com.ideakup.CustomizeGrid;
 
 	public class TestFluctGridClass extends Sprite {
 		

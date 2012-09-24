@@ -1,4 +1,4 @@
-package com.ideakup {
+package com.cgon {
 	import flash.display.MovieClip;
 	[Embed(source="../../../lib/RummiLib.swf", symbol="RawRubPiece")]
 	

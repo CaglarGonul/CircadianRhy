@@ -1,4 +1,4 @@
-package com.ideakup {
+package com.cgon {
 
 	public class ColorLabels {
 		

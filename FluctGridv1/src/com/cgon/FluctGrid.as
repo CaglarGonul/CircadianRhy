@@ -1,4 +1,4 @@
-package com.ideakup {
+package com.cgon {
 	import com.greensock.easing.Expo;
 	import com.greensock.TweenLite;
 	import flash.display.Sprite;
