@@ -1,1 +1,0 @@
-This is an animation idea for casual games.
